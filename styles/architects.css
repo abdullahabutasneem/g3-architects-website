@@ -134,7 +134,46 @@ main {
 
 /* facts section start  */
 
+.fact-container {
+    margin-top: 2rem;
+}
 
+.fact-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.fact-container p {
+    color: #727272;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #FF900E;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card h3 {
+    margin: 0.8rem 0;
+    font-size: 2.8rem;
+    color: #424242;
+
+}
+
+.card p {
+    color: #727272;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
 
 /* facts section end  */
 
@@ -154,12 +193,20 @@ main {
         padding: 1.4rem;
     }
     nav,
-    .team-feature-container
+    .team-feature-container,
+    .card-container
      {
         flex-direction: column;
     }
     .team-image-container {
         grid-template-columns: 1fr;
+    }
+    .team-feature-description,
+    .fact-container {
+        padding: 50px 50px 0 50px;
+    }
+    .card-container {
+        gap: 1rem;
     }
 
 }
@@ -180,6 +227,10 @@ main {
 
     .team-feature-description {
         padding: 30px 30px;
+    }
+
+    .fact-container {
+        padding: 0 30px;
     }
 }
 
