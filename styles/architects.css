@@ -2,10 +2,18 @@
 
 * {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-size: 16px; */
 }
 
 .btn-primary {
-    
+    padding: 0.8rem 1.2rem;
+    background: #FF900E;
+    color: white;
+    border-radius: 0.4rem;
+    border: none;
+    margin-bottom: 3rem;
 }
 
 
@@ -22,24 +30,35 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+nav h3 {
+    font-size: 1.5rem;
+}
+
 nav > ul {
     display: flex;
 }
 
 nav li {
     list-style: none;
-    margin-left: 15px;
+    margin-left: 1rem;
     
 }
 
 nav li  a {
     text-decoration: none;
     color: var(--dark-02, #424242);
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 /* header section end */
 
 /* banner-section start */
+
+.banner {
+    margin: 4rem 0;
+}
 
 .banner-content {
     max-width: 800px;
@@ -48,15 +67,120 @@ nav li  a {
 }
 
 .banner-title {
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 700;
     color: #131313;
 }
 
 .banner-description {
     color: #727272;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+
+
+.banner img {
+    width: 100%;
 }
 
 
 
 /* banner-section end */
+
+main {
+    max-width: 1440px;
+    margin: 4rem auto;
+}
+
+/* team feature start  */
+
+
+.team-feature-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-feature-description {
+    padding: 70px 70px;
+}
+
+.team-title{
+    color: var(--dark-03, #727272);
+    font-size: 2.8rem;
+}
+
+.team-title .normal-text {
+    font-weight: 700;
+    color: black;
+}
+
+.team-title .feature-text {
+    color: #FF900E;
+}
+
+.team-feature-description p {
+    margin: 2rem 0;
+    color: #727272
+}
+
+/* team feature end */
+
+/* facts section start  */
+
+
+
+/* facts section end  */
+
+
+
+
+
+
+
+/* Media queries */
+
+/* mobile devices */
+
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 1.4rem;
+    }
+    nav,
+    .team-feature-container
+     {
+        flex-direction: column;
+    }
+    .team-image-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* mobile devices */
+
+
+/* medium device */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+    nav,
+    .team-feature-container {
+        flex-direction: column;
+    }
+
+    .team-feature-description {
+        padding: 30px 30px;
+    }
+}
+
+/* medium device */
